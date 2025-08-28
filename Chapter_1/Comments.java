@@ -6,7 +6,7 @@ public class Comments {
       /*This is a block comment or a multi-line comment*/
       
       /**
-      This is a JavaDoc comment
+      This is a Javadoc comment
       */
    }
 }
