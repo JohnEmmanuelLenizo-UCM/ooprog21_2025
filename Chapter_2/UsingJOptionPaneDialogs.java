@@ -13,7 +13,7 @@ public class UsingJOptionPaneDialogs {
             JOptionPane.showMessageDialog(null, "Operation Cancelled.");
             break;
          }
-         else if (name.isEmpty()) {
+         else if (name.isEmpty() || name.trim().equals("")) {
             JOptionPane.showMessageDialog(null, "Please enter a valid name.");
             continue;
          }  
