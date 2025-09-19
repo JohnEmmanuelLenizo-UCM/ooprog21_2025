@@ -3,7 +3,7 @@
 import java.util.Scanner;
 class DebugThree1 //removed access specifier "public" to support older version of java
 {
-   public static void main(String args[])
+   public static void main(String[] args) //'String args[]' should be 'String[] args'
    {
       double check1;
       double check2;
@@ -23,3 +23,4 @@ class DebugThree1 //removed access specifier "public" to support older version o
       System.out.println("The tip should be at least $" + tip);
    }
 }
+
