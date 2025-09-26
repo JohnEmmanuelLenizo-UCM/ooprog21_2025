@@ -42,5 +42,5 @@ public class DebugFour4
 /*code fixes
  * in line 15, changed identifier from 'trip2' to 'trip3'
  * in line 35, changed from 'trp.getDepartureCity()' to 'trip.getDepartureCity()'
- * fixed main method
+
  */
