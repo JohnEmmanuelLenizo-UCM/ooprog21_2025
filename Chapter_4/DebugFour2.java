@@ -38,8 +38,8 @@ public class DebugFour2
 
 /*Code Fixes
  * Fixed pen2 instantiation. "pen2 = new DebugPen(point, color);" changed to "pen2 = new DebugPen(color, point);"
- * Fixed main method
  * Fixed display method. Changed 'display(FixDebugPen p)' to 'display(DebugPen p)'
  * Fixed statement "System.out.println("      and a " + p1.getPoint() + " point.");" to "System.out.println("      and a " + p.getPoint() + " point.");"
  * Fixed "display(pen22);" to "display(pen2);"
+
  */
