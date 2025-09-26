@@ -48,5 +48,5 @@ public class DebugFour3
  * changed 'FixDebugBox()' to 'DebugBox()'
  * changed 'FixDebugBox(w, l, h)' to 'DebugBox(w, l, h)' and renamed the 'box1' variable to 'box2'
  * changed to 'showVolume(box2)' instead of 'box2.showVolume();'
- * Fixed main method
  */
+
