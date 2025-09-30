@@ -2,7 +2,7 @@
 // to instantiate three Trip objects
 // Each uses a different version of the constructor
 import java.util.Scanner;
-public class DebugFour4
+class DebugFour4
 {
    public static void main(String[] args)
    {
@@ -44,3 +44,4 @@ public class DebugFour4
  * in line 35, changed from 'trp.getDepartureCity()' to 'trip.getDepartureCity()'
 
  */
+
