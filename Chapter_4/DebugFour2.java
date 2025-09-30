@@ -3,7 +3,7 @@
 // One with default values
 // and the other with user-supplied values
 import java.util.Scanner;
-public class DebugFour2
+class DebugFour2
 {
    public static void main(String[] args)
    {
@@ -43,3 +43,4 @@ public class DebugFour2
  * Fixed "display(pen22);" to "display(pen2);"
 
  */
+
