@@ -1,7 +1,7 @@
 // This class uses a DebugCircle class
 // to instantiate a Circle object
 import java.util.Scanner;
-public class DebugFour1
+class DebugFour1
 {
    public static void main(String[] args)
    {
@@ -27,3 +27,4 @@ public class DebugFour1
  * In statement "System.out.println("The radius is " + c.getRad());" changed the method to "c.getRadius" to retrieve the radius value
  * In statement "System.out.println("The diameter is " + c.getDiam());" changed the method to "c.getDiameter()" to retrieve the diameter value
  */
+
