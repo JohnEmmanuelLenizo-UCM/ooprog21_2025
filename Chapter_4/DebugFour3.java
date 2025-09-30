@@ -1,7 +1,7 @@
 // This class uses a DebugBox class
 // to instantiate two Box objects
 import java.util.Scanner;
-public class DebugFour3
+class DebugFour3
 {
    public static void main(String[] args)
    {
@@ -49,4 +49,5 @@ public class DebugFour3
  * changed 'FixDebugBox(w, l, h)' to 'DebugBox(w, l, h)' and renamed the 'box1' variable to 'box2'
  * changed to 'showVolume(box2)' instead of 'box2.showVolume();'
  */
+
 
