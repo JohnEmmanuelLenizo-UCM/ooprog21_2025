@@ -17,16 +17,13 @@ class DebugFive4 //removed public
       System.out.print("Enter an integer >> ");
       four = input.nextInt();//changed to 'four'
       
-      if(one > two && one > three && one > four)
-         highest = one;
-      else 
-         if(two > one && two > three && two > four) //changed to '&&'
-            highest = two;
-         else 
-            if (three > one && three > two && three > four) //changed to '&&'
-               highest = three;
-            else
-               highest = four;
+      highest = one;
+      if (highest < two) //fixed if statement
+         highest = two;
+      if (highest < three) //fixed if statement
+         highest = three;
+      if (highest < four) //fixed if statement
+         highest = four;
       System.out.println("The highest number is " + highest);
    }
 }
