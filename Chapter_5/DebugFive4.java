@@ -17,15 +17,22 @@ class DebugFive4 //removed public
       System.out.print("Enter an integer >> ");
       four = input.nextInt();//changed to 'four'
       
-      highest = one;
-      if (highest < two) //fixed if statement
+     if (one >= two && one >= three && one >= four) { //add open and close bracket and use >=
+         highest = one;
+      }
+      else if(two >= one && two >= three && two >= four) { //change || to &&
          highest = two;
-      if (highest < three) //fixed if statement
+      }
+      else if(three >= one && three >= two && three >= four) { //change == to >
          highest = three;
-      if (highest < four) //fixed if statement
+      }
+      else {
          highest = four;
+      }
+      
       System.out.println("The highest number is " + highest);
    }
 }
+
 
 
