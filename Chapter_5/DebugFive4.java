@@ -17,7 +17,7 @@ class DebugFive4 //removed public
       System.out.print("Enter an integer >> ");
       four = input.nextInt();//changed to 'four'
       
-     if (one >= two && one >= three && one >= four) { //add open and close bracket and use >=
+     if (one >= two && one >= three && one >= four) { //add open and close bracket and use '>=' for duplicates
          highest = one;
       }
       else if(two >= one && two >= three && two >= four) { //change || to &&
@@ -33,6 +33,7 @@ class DebugFive4 //removed public
       System.out.println("The highest number is " + highest);
    }
 }
+
 
 
 
