@@ -3,17 +3,18 @@ import java.util.Scanner;
 class Payroll {
     public static void main(String[] a) {
         Scanner input = new Scanner(System.in);
-        int hoursWorked;
-        double payRate, overtimePay, regularPay;
+        int employeeNumber;
+        double hoursWorked, payRate, overtimePay, regularPay;
         Employee employeeOne;
-
+        
+        System.out.print("Enter employee number: ");
+        employeeNumber = input.nextInt();
         System.out.print("How many hours did you work this week? ");
-        hoursWorked = input.nextInt();
+        hoursWorked = input.nextDouble();
         System.out.print("What is your regular pay rate? ");
         payRate = input.nextDouble();
 
-        employeeOne = new Employee(1, payRate);
-        //employeeOne.setPayRate(checkPayRate(employeeOne)); //remove if not used like in the sample output provided (pay rate limiter)
+        employeeOne = new Employee(employeeNumber, payRate);
 
         regularPay = calculateRegularPay(hoursWorked, employeeOne);
         overtimePay = calculateOvertimePay(hoursWorked, employeeOne);
@@ -23,17 +24,9 @@ class Payroll {
         System.exit(0);
     }
     //methods
-    
-    /*public static double checkPayRate(Employee e) { //remove if not used like in the sample output provided (pay rate limiter)
-        double payRate = e.getPayRate();
-        if (payRate > e.getMaxRate()) {
-            payRate = e.getMaxRate();
-        }
-        return payRate;
-    }*/
-    public static double calculateRegularPay(int hoursWorked, Employee e) {
+    public static double calculateRegularPay(double hoursWorked, Employee e) {
         double result;
-        int hours;
+        double hours;
         if (hoursWorked > 40) {
             hours = 40;
         }
@@ -43,7 +36,7 @@ class Payroll {
         result = hours * e.getPayRate();
         return result;
     }
-    public static double calculateOvertimePay (int hoursWorked, Employee e) {
+    public static double calculateOvertimePay (double hoursWorked, Employee e) {
         double result = (hoursWorked - 40) * e.getPayRate() * e.getOvertimeMultiplier();
         return result;
     }
