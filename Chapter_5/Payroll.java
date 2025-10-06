@@ -37,7 +37,15 @@ class Payroll {
         return result;
     }
     public static double calculateOvertimePay (double hoursWorked, Employee e) {
-        double result = (hoursWorked - 40) * e.getPayRate() * e.getOvertimeMultiplier();
+        double result;
+        double overtime; 
+        if (hoursWorked > 40) {
+            overtime = hoursWorked - 40;
+        }
+        else {
+            overtime = 0;
+        } 
+        result = overtime * e.getPayRate() * e.getOvertimeMultiplier();
         return result;
     }
     public static void displayOutput(double regularPay, double overtimePay) {
