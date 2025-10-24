@@ -12,7 +12,7 @@ class DebugSix1
       int day = 1;
       System.out.print("Enter number of days >> "); //added semicolon
       days = keyboard.nextInt();
-      while(days >= day) //changed '<' to '>'
+      while(days >= day) //changed '<' to '>='
       {
          money = 2 * money;
          System.out.println("After day " + day +
@@ -22,3 +22,4 @@ class DebugSix1
    }
 
 }
+
