@@ -21,7 +21,7 @@ class DebugSeven4{
       for(int i = 0; i < stringLength; i++){ // logic error, changed from "1 <= stringLength" to "1 < stringLength"
          char ch = Character.toLowerCase(aString.charAt(i)); //added a "." on the aString.chartAt(i) 
          System.out.print(ch);
-         if(Character.isLetter(ch))
+         if(Character.isLetter(ch)) // removed NOT logic (!) 
             numLetters++;
    }
       System.out.println();
@@ -30,3 +30,4 @@ class DebugSeven4{
       System.out.println("The number of LETTERS is " + numLetters); //missing a closing quotation mark
    }
 }
+
