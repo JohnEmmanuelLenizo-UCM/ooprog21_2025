@@ -12,7 +12,8 @@ class CompareStrings {
          System.out.println("Carmen equals " + str2);
       }
       else {
-         System.out.println("Carmen does not equal to " + str2);
+         System.out.println("Carmen does not equal " + str2);
       }
    }      
+
 }
